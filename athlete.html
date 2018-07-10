@@ -4,11 +4,18 @@
     <title> Portfolio  </title>
   </head>
   <body>
-    <div class="c">
-      <h1>Sam's Athletic Portfolio</h1>
-      <p>Here's Sam's athletic accomplishments throughout the sport of Soccer. Although he has been involved in travel sports
-        for Tennis, Basketball, and Swimming,this page is mainly for his Soccer Cv as it is the sport he mostly plays, at a
-        very high level.!</p>
+    <div class="text">
+      <div class="c">
+        <div class="menu">
+          <a href="index.html">
+            <div class="button">Home</div>
+          </a>
+        </div>
+        <h1>Sam's Athletic Portfolio</h1>
+        <p>Here's Sam's athletic accomplishments throughout the sport of Soccer. Although he has been involved in travel sports
+          for Tennis, Basketball, and Swimming,this page is mainly for his Soccer Cv as it is the sport he mostly plays, at a
+          very high level.!</p>
+      </div>
     </div>
   </body>
 </html>
@@ -18,9 +25,31 @@
 h1 {
   color: blue;
 }
+a {
+  color: #f44242;
+  text-decoration: none;
+}
 
+.text {
+  font-family: Arial !important;
+}
 .c {
   text-align: center;
+}
+
+.button {
+  vertical-align: center;
+  background-color: #41f4eb;
+  height: 65px;
+  width: 70px;
+}
+.button:hover {
+  background-color:#42b9f4;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 </style>

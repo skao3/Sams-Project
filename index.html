@@ -4,12 +4,25 @@
     <title> The Sam KAO page </title>
   </head>
   <body>
-    <div class="c">
-      <h1>Homepage</h1>
-      <p>Welcome to the homepage of sam kao's website. Here you will learn about sam kao
-      and his academic and athletic achievements/skills!</p>
-    </div>
-    <a href="athlete.html">Sam's Athlete Portfolio</a>
+    <div class="text">
+      <div class="c">
+        <div class="menu">
+          <a href="athlete.html">
+            <div class="button">Sam's Athlete Portfolio</div>
+          </a>
+          <a href="athlete.html">
+            <div class="button">Sam's Athlete Portfolio</div>
+          </a>
+          <a href="athlete.html">
+            <div class="button">Sam's Athlete Portfolio</div>
+          </a>
+        </div>
+        <h1>Homepage</h1>
+        <p>Welcome to the homepage of sam kao's website. Here you will learn about sam kao
+        and his academic and athletic achievements/skills!</p>
+        <img class="ph0ot" src="picture.jpg">
+      </div>
+    <div>
   </body>
 </html>
 
@@ -18,9 +31,35 @@
 h1 {
   color: blue;
 }
+a {
+  color: #f44242;
+  text-decoration: none;
+}
 
+.text {
+  font-family: Arial !important;
+  background-color: #f4d941;
+  height:1000px;
+}
 .c {
   text-align: center;
 }
-
+.button {
+  vertical-align: center;
+  background-color: #41f4eb;
+  height: 65px;
+  width: 70px;
+}
+.button:hover {
+  background-color: #42b9f4;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ph0ot {
+  height:400px;
+  width:500px;
+}
 </style>
